@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>bookstore</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body>
+  <div id="preloader"></div> 
+    <nav class="nav-bar">
+        <a href="#" class="nav-bar__logo"><i class="fa-solid fa-book"></i>كتابى</a>
+       <div class="nav-bar__buttons col-7 ">
+        <ul class="nav-bar__buttons__list">
+            <li class="nav-bar__buttons__list__item"><a class="nav-bar__buttons__list__item__link" href="#home">الصفحة الرئيسية</a></li>
+            <li class="nav-bar__buttons__list__item"><a class="nav-bar__buttons__list__item__link" href="#books">الكتب</a></li>
+            <li class="nav-bar__buttons__list__item"><a class="nav-bar__buttons__list__item__link" href="#arrivals">الكتب الجديدة</a></li>
+            <li class="nav-bar__buttons__list__item"><a class="nav-bar__buttons__list__item__link" href="#review">المراجعات</a></li>
+            <li class="nav-bar__buttons__list__item"><a class="nav-bar__buttons__list__item__link" href="#contact">للتواصل</a></li>
+          </ul>
+       </div>
+       <div class="icons">
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
+        <i id="login-user" class="fa-solid fa-user"></i>
+       </div>
+       
+    </nav>
+    
+    <!--end of nav bar-->
+<div class="login-form">
+<div id="close-btn" class="fa-solid fa-circle-xmark"></div>
+<form class="login-form__des" action="">
+    <h3>تسجيل الدخول</h3>
+    <p class="enter">بريد إلكتروني</p> 
+    <input class="box" type="email" placeholder="أدخل بريدك الإلكتروني" required>
+    <p class="enter">كلمة المرور</p>
+    <input class="box" type="password" placeholder="ادخل رقمك السري" required>
+    <div class="checkbox">
+        <input class="check" type="checkbox" id="remember">
+        <label for="remember">تذكرنى</label>
+    </div>
+    <input class="button" type="submit" value="تسجيل الدخول">
+    <p class="login-form__qustions">نسيت كلمة المرور ؟<a class="login-form__qustions__links" href="#">اضغط هنا</a></p>
+    <p class="login-form__qustions">ليس لديك حساب ؟<a class="login-form__qustions__links" href="#">إنشاء حساب</a></p>
+</form>
+</div>
+ <!--end of login form-->
+<section class="home" id="home">
+    <div class="beside">
+        <div class="content">
+            <h2>خصم حتى 75%</h2>
+            <p class="content__offer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic possimus corporis ratione aliquid, commodi cum error ex ut dicta at minima
+             sed autem, culpa, molestiae accusamus fugit cupiditate nam quis!</p>
+            <a href="#"><button class="shop-btn">تسوق الآن</button></a>
+        </div>
+        <div class="swiper mySwiper">
+           <div class="swiper-wrapper">
+            <a href="#" class="swiper-slide"><img src="booksimages/6-min.jpg"></a>
+            <a href="#" class="swiper-slide"><img src="booksimages/1-min.jpg"></a>
+            <a href="#" class="swiper-slide"><img src="booksimages/8-min.jpg"></a>
+            <a href="#" class="swiper-slide"><img src="booksimages/13-min.jpg"></a>
+            <a href="#" class="swiper-slide"><img src="booksimages/12-min.jpg"></a>
+           </div>
+           <div class="shelf"></div>
+        </div>
+    </div>
+</section>
+
+<!--sdsdvds-->
+<div class="cart">
+    <p class="cart-name">عربة التسوق الخاصة بي</p>
+    <div class="cart-content">
+
+       
+    </div>
+    <div class="total">
+        <div class="total-title">المجموع</div>
+        <div class="total-price">$0</div>
+    </div>
+    <button class="btn-buy">شراء</button>
+    <i id="close-cart" class="fa-solid fa-circle-xmark"></i>
+</div>
+
+<!--ufgfhgf-->
+<section class="books" id="books">
+    <h2 class="books-title">افضل الكتب</h2>
+    <div class="cards row justify-content-center">
+        <div class="product col-sm-12 col-md-4 col-lg-3 col-xl-2 ">
+           <img src="booksimages/11-min.jpg" class="book-photo"> 
+           <p class="book-name">حدث بالفعل 4</p>
+           <span class="price">$4</span>
+           <span class="fa-solid fa-basket-shopping add-cart"></span>
+        </div>
+
+        <div class="product col-sm-12 col-md-4 col-lg-3 col-xl-2">
+            <img  src="booksimages/7-min.jpg  "  class="book-photo"> 
+            <p class="book-name">النيدلان</p>
+            <span class="price">$4</span>
+            <i class="fa-solid fa-basket-shopping add-cart"></i>
+         </div>
+
+         <div class="product col-sm-12 col-md-4 col-lg-3 col-xl-2">
+            <img src="booksimages/12-min.jpg" class="book-photo"> 
+            <p class="book-name"> لوغاريتم</p>
+            <span class="price">$4</span>
+            <i class="fa-solid fa-basket-shopping add-cart"></i>
+         </div>
+
+         <div class="product col-sm-12 col-md-4 col-lg-3 col-xl-2">
+            <img src="booksimages/8-min.jpg" class="book-photo"> 
+            <p class="book-name">حدث بالفعل 1</p>
+            <span class="price">$4</span>
+            <i class="fa-solid fa-basket-shopping add-cart"></i>
+         </div>
+         <div class="product col-sm-12 col-md-4 col-lg-3 col-xl-2">
+            <img src="booksimages/barbara-min.jpg"  class="book-photo"> 
+            <p class="book-name">barbara</p>
+            <span class="price">$4</span>
+            <i class="fa-solid fa-basket-shopping add-cart"></i>
+         </div>
+         <div class="product col-sm-12 col-md-4 col-lg-3 col-xl-2">
+            <img src="booksimages/11-min.jpg"  class="book-photo"> 
+            <p class="book-name">حدث بالفعل 4</p>
+            <span class="price">$4</span>
+            <i class="fa-solid fa-basket-shopping add-cart"></i>
+         </div>
+         <div class="product col-sm-12 col-md-4 col-lg-3 col-xl-2">
+            <img src="booksimages/13-min.jpg"  class="book-photo"> 
+            <p class="book-name">  وهاب الشروق</p>
+            <span class="price">$4</span>
+            <i class="fa-solid fa-basket-shopping add-cart"></i>
+         </div>
+         <div class="product col-sm-12 col-md-4 col-lg-3 col-xl-2">
+            <img src="booksimages/fools-min.jpg"  class="book-photo"> 
+            <p class="book-name">  fools</p>
+            <span class="price">$4</span>
+            <i class="fa-solid fa-basket-shopping add-cart"></i>
+         </div>
+         <div class="product col-sm-12 col-md-4 col-lg-3 col-xl-2">
+            <img src="booksimages/5.jpg"  class="book-photo"> 
+            <p class="book-name">  البستان</p>
+            <span class="price">$4</span>
+            <i class="fa-solid fa-basket-shopping add-cart"></i>
+         </div>
+         <div class="product col-sm-12 col-md-4 col-lg-3 col-xl-2">
+            <img src="booksimages/11-min.jpg"  class="book-photo"> 
+            <p class="book-name">حدث بالفعل 4</p>
+            <span class="price">$4</span>
+            <i class="fa-solid fa-basket-shopping add-cart"></i>
+         </div>
+    </div>
+</section>
+ <!--ends of cards-->
+    <section style="margin: 0;" class="come" id="arrivals">
+        <p class="books-title special">الوافدون الجدد</p>
+       <div class="row m-0">
+     <div class="col-5">
+    <img src="booksimages/detail.png" alt="">
+     </div>
+     <div class="col-6">
+     <div data-am-cardslider>
+        <input type="radio" name="card-slider" id="card-slider-1" />
+        <input type="radio" name="card-slider" id="card-slider-2" checked />
+        <input type="radio" name="card-slider" id="card-slider-3" />
+        <div class="cs-slide-container">
+          <label for="card-slider-1" class="cs-slide">
+            <div class="cs-slide-content">
+              <div class="swipe"><img class="" src="booksimages/barbara-min.jpg"></div>
+            </div>
+          </label>
+          <label for="card-slider-2" class="cs-slide">
+            <div class="cs-slide-content">
+              <div class="swipe"><img  src="booksimages/13-min.jpg"></div>
+            </div>
+          </label>
+          <label for="card-slider-3" class="cs-slide">
+            <div class="cs-slide-content">
+              <div class="swipe"><img  src="booksimages/fools-min.jpg"></div>
+            </div>
+          </label>
+        </div>
+        <div class="cs-indicator-container">
+          <label for="card-slider-1" class="cs-indicator"></label>
+          <label for="card-slider-2" class="cs-indicator"></label>
+          <label for="card-slider-3" class="cs-indicator"></label>
+        </div>
+      </div>
+    </div>
+    </div>
+    </section>
+<!--end of arrival section-->
+<section class="review" id="review">
+  <p class="books-title special star">المراجعات</p>
+  <div class="rev-section">
+    
+    
+    <div class="reviews">
+    
+    <div class="review">
+       <div class="head-review">
+          <img class="rev-img" src="booksimages/rev1.jpg" width="250px">
+       </div>
+       <div class="body-review">
+          <div class="name-review">محمد</div>
+          <div class="place-review">مصر</div>
+          <div class="rating">
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star-half"></i>
+          </div>
+          <div class="desc-review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati eligendi suscipit illum officia ex eos.</div>
+       </div>
+    </div>
+    <div class="review">
+       <div class="head-review">
+          <img class="rev-img" src="booksimages/rev2.jpg" width="250px">
+       </div>
+       <div class="body-review">
+          <div class="name-review">احمد</div>
+          <div class="place-review">مصر</div>
+          <div class="rating">
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <div class="desc-review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati eligendi suscipit illum officia ex eos.</div>
+       </div>
+    </div>
+    <div class="review">
+       <div class="head-review">
+          <img class="rev-img" src="booksimages/rev3.jpg" width="250px">
+       </div>
+       <div class="body-review">
+          <div class="name-review">طه</div>
+          <div class="place-review">مصر</div>
+          <div class="rating">
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star-half"></i>
+          </div>
+          <div class="desc-review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati eligendi suscipit illum officia ex eos.</div>
+       </div>
+    </div>
+    
+    </div>
+    
+    </div>
+</section>
+<!--end of review section-->
+<section  class="contact-us" id="contact">
+  <p class="books-title special star ">Contact Us</p>
+  <div class="row">
+  <div class="contact-us__form col-lg-6 col-sm-12 col-xl-6 ">
+  <form onsubmit="event.preventDefault();" class="information">
+    <p class="contact-us__name">تواصل معنا</p>
+
+    <label class="info" for="name">الاسم:</label>
+    <input class="inputs" type="text" id="name" placeholder="ادخل اسمك" required>
+    <small class="error"></small>
+
+    <label class="info" for="email">بريدك الااكترونى:</label>
+    <input class="inputs" type="email" id="email" placeholder="ادخل حسابك" required>
+    <small class="error"></small>
+
+    <label class="info" for="message">رسالة:</label>
+    <textarea class="inputs scroll" id="message" placeholder="ما هى رسالتك" rows="4" required></textarea>
+    <small class="error"></small>
+
+    <div class="center">
+      <input id="sub" type="submit" value="ارسل الرساله  ">
+      <p id="success"></p>
+    </div>
+  </form>
+</div>
+<div style=" margin-top: 5%;" class="navigation col-xl-6 col-lg-6  ">
+  <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.4279695140694!2d29.907012514958648!3d31.208870481473745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c38a0562fe85%3A0xa34cc632ec23e7!2sBibliotheca%20Alexandrina!5e0!3m2!1sen!2seg!4v1656924225656!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</div>
+</section>
+<!--end of contact-->
+<section class="subscrib">
+<p class="subscrib__p">نجعل من السهل تجربة الإبداع</p>
+<p class="subscrib__s">تصميم جديد وأنيق</p>
+<form onsubmit="event.preventDefault();validateForm()" class="subscrib__form">
+  <input class="mail" type="email" placeholder="ادخل بريدك">
+  <button class="subscrib__btn">الاشتراك</button>
+</form>
+</section>
+<!--end of sub.-->
+<div class="container-fluid back-color">
+  <div class="row top">
+      <div class="col-sm-3 col-lg-3 col-md-4 col-xs-12 pade">
+         <div>
+          <img src="booksimages/bookly.png">
+         </div>
+          <p class="web-detail">Lorem ipsum dolor sit amet,<br>
+          consectetuer adipiscing elit. Donec<br> 
+          odio. Quisque volutpat mattis eros.<br> 
+          Nullam malesuada erat ut turpis.<br> 
+          Suspendisse urna nibh, viverra non,<br> 
+          semper suscipit, posuere a, pede ...</p>
+      </div>
+      <div class="col-sm-3 col-lg-3 col-md-4 col-xs-12 pade">
+          <p class="addre">تواصل معنا</p>
+          <p class="ff"><span class="fff">عنوان:</span> 123 Fake Street, New York</p>
+          <p class="ff"><span class="fff">هاتف:</span> (08) 8827 633354</p>
+          <p class="ff"><span class="fff">فاكس:</span> (08) 8827 633354</p>
+          <p class="ff"><span class="fff">بريد:</span> contact@yoursite.com</p>
+          <p class="ff"><span class="fff">الافتتاح:</span> 8:00 - 19:00, Mon - Sat></p>
+      </div>
+      <div class="col-sm-3 col-lg-2 col-md-3 col-xs-12 pade">
+          <p class="addre">معلومات</p>
+          <p class="f">معلومات عنا</p><br>
+          <p class="f">إشعار قانوني</p><br>
+          <p class="f">عناوين</p><br>
+          <p class="f">طلب</p><br>
+          <p class="f">قسط</p><br>
+          <p class="f">الموردين</p><br>
+      </div>
+      <div class="col-sm-3 col-lg-2 col-md-3 col-xs-12 pade">
+          <p class="addre">حسابي</p>
+          <p class="f">توصيل</p><br>
+          <p class="f">Lإشعار قانوني</p><br>
+          <p class="f">معلومات عنا</p><br>
+          <p class="f">انخفاض أسعار</p><br>
+          <p class="f">منتج جديد</p><br>
+          <p class="f">أفضل المبيعات</p><br>
+      </div>
+      <div class="col-sm-3 col-lg-2 col-md-3 col-xs-12 pade">
+          <p class="addre">شركة</p>
+          <p class="f">حسابي</p><br>
+          <p class="f">عربة التسوق الخاصة بي</p><br>
+          <p class="f">تعريف</p><br>
+          <p class="f">طلب</p><br>
+          <p class="f">اتصل بنا</p><br>
+          <p class="f">عناوين</p><br>
+      </div>
+  </div>
+  <hr class="space-two">
+  <div class="extra-information row">
+      <p class="col-xs-12 col-sm-3 extra-information__details">عائدات</p>
+      <p class="col-xs-12 col-sm-3 extra-information__details">تاريخ الطلب</p>
+      <p class="col-xs-12 col-sm-3 extra-information__details">خريطة الموقع</p>
+      <p class="col-xs-12 col-sm-3 extra-information__details">شهادة</p>
+  </div>
+<p class="copyright">حقوق الطبع والنشر © 2021 Bookly Store. كل الحقوق محفوظة.</p>
+<div class="payment-method">
+<img src="booksimages/demo2-payment.jpg"class="how-pay">
+</div>
+</div> 
+<script>
+  var loader = document.getElementById('preloader');
+window.addEventListener('load', function(){
+  loader.style.display = 'none';
+});
+
+const nameInput = document.querySelector('#name');
+const emailInput = document.querySelector('#email');
+const messageInput = document.querySelector('#message');
+const success = document.querySelector('#success');
+const error = document.querySelectorAll('.error');
+
+function validateForm(){
+  clearMessages();
+  if(nameInput.value.length < 1){
+    error[0].innerText = "name cannot be blank";
+    nameInput.classList.add('error-border')
+  };
+};
+const menu = document.querySelector('.nav-bar__buttons__list')[0];
+const menuBtn = document.querySelector('.fa-grip-lines')[0];
+const removeMenu = document.querySelector('.remove')[0];
+const ic = document.querySelector('.nav-bar');[0]
+
+menuBtn.onclick = ()=>{
+  menu.classList.add('bar');
+}
+</script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/java.js"></script>
+</body>
+</html>
